@@ -1,0 +1,31 @@
+body{
+  background: #fce4ec;
+}
+#app {
+  min-height: 100vh;
+  padding-bottom: 8rem; 
+  .chip {
+    .close-btn {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 8px;
+    }
+  }
+  header {
+    .top-logo {
+      &.valign-wrapper {
+        margin: 0;
+        h1{          
+          line-height: 1;
+          margin: 0;
+          a{
+            font-size: 2.5rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
