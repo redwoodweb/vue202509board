@@ -9,6 +9,7 @@ import Login from "@/components/Login"
 import Register from "@/components/Register"
 import EditCate from "@/components/EditCate"
 import Guest from "@/components/Guest"
+import Write from "@/components/Write"
 import firebase from "firebase"
 
 Vue.use(Router)
@@ -61,6 +62,14 @@ let router = new Router({
       component: Guest,
       meta: {
         requiresGuest: true
+      }
+    },
+    {
+      path: "/write",
+      name: "Write",
+      component: Write,
+      meta: {
+        requiresAuth: true
       }
     },
     {
