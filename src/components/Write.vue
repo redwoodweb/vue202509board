@@ -119,9 +119,4 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-/* button {
-  &:focus {
-    background: none;
-  }
-} */
 </style>
