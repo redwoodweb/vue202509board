@@ -16,14 +16,14 @@
 
         <label 
           ref="labelText" 
-          for="input_text"/>
+          for="input_text" />
       </div>
 
       <button 
         class="btn large pink accent-3 col s4 m2" 
         type="button" 
         @click="inputTextFunc">
-        <i class="fa fa-plus"/>
+        <i class="fa fa-plus" />
       </button>
     </div>
 

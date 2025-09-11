@@ -18,7 +18,9 @@
       <router-link
         :to="{ name: 'edit', params: { employee_id: ep_id } }"
         class="btn-floating btn-large red"
-      ><i class="fa fa-pencil"/></router-link>
+      ><i 
+        class="fa fa-pencil"
+      /></router-link>
     </div>
   </div>
 </template>

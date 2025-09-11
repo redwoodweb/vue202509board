@@ -51,13 +51,13 @@ module.exports = {
       }
     ],
     "no-console": "off", // console 사용 허용
-    "no-debugger": "off", // debugger 사용 허용
+    "no-debugger": "off" // debugger 사용 허용
 
     // allow async-await
     // 'generator-star-spacing': 'off',
     // allow debugger during development
     // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // "quote-props": ["error", "always"] // 모든 객체 키에 따옴표 강제
-    "quote-props": ["error", "as-needed"] // 필요한 경우에만 (Prettier 기본)
+    // "quote-props": ["error", "as-needed"] // 필요한 경우에만 (Prettier 기본)
   }
 }

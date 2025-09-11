@@ -1,74 +1,45 @@
 <template>
   <div id="write">
-    <div class="mdc-data-table">
-      <div class="mdc-data-table__table-container">
-        <table 
-          class="mdc-data-table__table" 
-          aria-label="Dessert calories">
-          <thead>
-            <tr class="mdc-data-table__header-row">
-              <th 
-                class="mdc-data-table__header-cell" 
-                role="columnheader" 
-                scope="col">Dessert</th>
-              <th 
-                class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" 
-                role="columnheader" 
-                scope="col">Carbs (g)</th>
-              <th 
-                class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" 
-                role="columnheader" 
-                scope="col">Protein (g)</th>
-              <th 
-                class="mdc-data-table__header-cell" 
-                role="columnheader" 
-                scope="col">Comments</th>
-            </tr>
-          </thead>
-          <tbody class="mdc-data-table__content">
-            <tr class="mdc-data-table__row">
-              <th 
-                class="mdc-data-table__cell" 
-                scope="row">Frozen yogurt</th>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.0</td>
-              <td class="mdc-data-table__cell">Super tasty</td>
-            </tr>
-            <tr class="mdc-data-table__row">
-              <th 
-                class="mdc-data-table__cell" 
-                scope="row">Ice cream sandwich</th>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">37</td>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.33333333333</td>
-              <td class="mdc-data-table__cell">I like ice cream more</td>
-            </tr>
-            <tr class="mdc-data-table__row">
-              <th 
-                class="mdc-data-table__cell" 
-                scope="row">Eclair</th>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6.0</td>
-              <td class="mdc-data-table__cell">New filing flavor</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">191
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
       </div>
-      <label class="mdc-text-field mdc-text-field--filled">
-        <span class="mdc-text-field__ripple"/>
-        <span 
-          id="my-label-id" 
-          class="mdc-floating-label">Hint text</span>
-        <input 
-          class="mdc-text-field__input" 
-          type="text" 
-          aria-labelledby="my-label-id">
-        <span class="mdc-line-ripple"/>
-      </label>
-    </div>
-    <StyledButton 
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          This is an inline input field:
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+    <!-- <StyledButton 
       :size="btnSize" 
       primary 
-      @click="changeBtn">button</StyledButton>
+      @click="changeBtn">button</StyledButton> -->
   </div>
 </template>
 <script>

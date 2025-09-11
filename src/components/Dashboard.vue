@@ -8,7 +8,7 @@
         class="inner">
         <div 
           ref="randomAni" 
-          :class="['random-ani', { active: isAni }]"/>
+          :class="['random-ani', { active: isAni }]" />
         <div 
           ref="randombox" 
           :class="['randombox', { on: randomBoxView }]">
@@ -20,12 +20,14 @@
     </div>
     <div class="row flex-wrap">
       <div class="input-items icon">
-        <router-link 
+        <router-link
           :to="{
             name: 'editcate',
             params: { employee_id: user.ep_id },
             query: { current_cate: currentCate }
-        }"><i class="large material-icons">library_add</i></router-link>
+          }"
+        ><i class="large material-icons">library_add</i></router-link
+        >
       </div>
       <div class="input-items">
         <div 
@@ -54,21 +56,22 @@
     <div class="row">
       <form @submit.prevent>
         <div class="input-field col s8 m10">
-          <input 
-            id="input_text" 
-            ref="inputText" 
-            v-model="inputText" 
-            type="text" 
-            @keyup.enter="inputTextFunc" >
+          <input
+            id="input_text"
+            ref="inputText"
+            v-model="inputText"
+            type="text"
+            @keyup.enter="inputTextFunc"
+          >
           <label 
             ref="labelText" 
-            for="input_text"/>
+            for="input_text" />
         </div>
         <button 
           class="btn large pink accent-3 col s4 m2" 
           type="button" 
           @click="inputTextFunc">
-          <i class="fa fa-plus"/>
+          <i class="fa fa-plus" />
         </button>
       </form>
     </div>
@@ -92,14 +95,18 @@
       </div>
       <div class="row btn-group">
         <div class="col s6">
-          <a 
-            class="waves-effect waves-light btn center-text suffle-btn pink accent-3" 
-            @click="suffleList">SUFFLE</a>
+          <a
+            class="waves-effect waves-light btn center-text suffle-btn pink accent-3"
+            @click="suffleList"
+          >SUFFLE</a
+          >
         </div>
         <div class="col s6">
-          <a 
+          <a
             class="waves-effect waves-light btn center-text reset-btn grey darken-1 white-text"
-            @click="resetList">RESET</a>
+            @click="resetList"
+          >RESET</a
+          >
         </div>
       </div>
     </div>
